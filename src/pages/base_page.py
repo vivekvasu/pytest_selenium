@@ -1,7 +1,8 @@
-class BasePage:
+from src.main.utils.driver_utils import DriverUtils
+
+
+class BasePage(DriverUtils):
 
     def __init__(self, driver) -> None:
         self.driver = driver
-
-    def enter_text(self, element, text):
-        element.send_keys(str(text))
+        super().__init__(driver)
