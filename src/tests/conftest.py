@@ -6,7 +6,7 @@ from src.main.utils.file_reader import File_Reader
 
 @pytest.fixture(scope='session')
 def setup(request):
-    path = '/Users/vivekvasu/vscode/pytest_selenium/config.json'
+    path = './config.json'
     config_data = File_Reader().read_json(path)
     config = Config.from_dict(config_data)
     driver = webdriver.Chrome()
