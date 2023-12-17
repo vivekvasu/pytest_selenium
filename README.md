@@ -6,3 +6,4 @@ Steps
 5. Then execute the cmd to activate the virtula env: source venv/bin/activate
 6. Install required packages. pip3 install -r requirements.txt
 7. Run the cmd : pytest or run via Test Explorer
+8. Refer https://allurereport.org/docs/pytest/ for allure report generation
